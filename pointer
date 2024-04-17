@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+int a;
+a=10;
+int*prt=&a;
+int**prt1=&prt;
+printf(" a is value %d \n",a);
+printf(" a is address %d \n",&a);
+
+printf(" prt is value  %d \n",prt);
+printf(" prt is address %d\n",&prt);
+
+printf(" prt1 is value %d\n",prt1);
+printf("prt1 is address %d\n",&prt1);
+
+printf(" *prt1 is value %d\n",*prt1);
+printf(" **prt1 is value %d\n",**prt1);
+
+
+}
