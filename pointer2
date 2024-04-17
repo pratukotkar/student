@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+{
+int a;
+a=20;
+int*prt=&a;
+int **prt1=&prt;
+printf("the values %d\n",a);
+printf("the address %d\n",&a);
+
+printf("the prt values %d\n",prt);
+printf("the &prt address %d\n",&prt);
+
+printf("the prt1 values %d\n",prt1);
+printf("the address %d\n",&prt1);
+
+printf("the values %d\n",(a+1));
+printf("the values %d\n",(&a+1));
+
+printf("the prt+1 %d\n",(prt+1));
+printf("the &prt+1 %d\n",(&prt+1));
+
+printf("the &prt1+1 %d\n",(prt1+1));
+printf("the &prt1+1 %d\n",(&prt1+1));
+
+printf("the *prt1 %d\n",*prt1);
+printf("the **prt1 %d\n", **prt1);
+}
